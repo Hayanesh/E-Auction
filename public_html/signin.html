@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+<html>
+    <head>
+        <title>Signup-online auctioneers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+         <style>
+        img {
+    -webkit-filter: drop-shadow(8px 8px 10px black); /* Chrome, Safari, Opera */
+    filter: drop-shadow(8px 8px 10px black);
+}
+    </style>
+    </head>
+    <body>
+        <div class="loginback">
+
+        <div id="loginmain"  >
+            <h1 style="color:#DA0">SIGN UP</h1>
+
+            <form method="post" action="http://localhost/eauction/public_html/sample.php">
+                        <div style="text-indent:26px"><b>User Name : </b>
+
+                          <input type="text" name="UN" id="UN" autofocus required><br><br>
+                        </div>
+                         <div style="text-indent:40px"><b>Email id :  </b>
+                          <input type="text" name="EI" id="EI" autofocus required><br><br>
+                        </div>
+                        <div style="text-indent:34px"><b>Password : </b>
+                          <input type="password" id="PWord" name="PWord" autofocus required><br><br>
+                        </div>
+                        <div style="text-indent:-22px"><b>Confirm Password : </b>
+                          <input type="password" id="CPWord" name="CPWord" autofocus required><br><br>
+                        </div>
+                        <div style="text-indent:16px">
+                            <b>Sex :</b>
+                            <input type="radio" name="sex" value="M">Male
+                            <input type="radio" name="sex" value="F">Female<br><br>
+                        </div>
+                        <div>
+                           <b> Birth date : </b>
+                           <input type="date" id="bdate" name="bdate" style="width: 130px" required><br><br>
+
+                        </div>
+                        <div>
+                            <b>Contact no :</b>
+                            <input type="number" id="contact" name="contact" style="width: 130px" required><br><br>
+                            </div>
+                  <div class="formholder" >
+                      <div style="float: left;margin-left:150px">
+                            <input type="submit" value="submit" name="submit"><br>
+                            </div>
+                            </div>
+            </form>
+
+
+        </div>
+        </div>
+          <a href="index.html"> <img src="img/back.jpg"></a>
+    </body>
+</html>

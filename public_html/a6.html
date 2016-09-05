@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Online Auctioneers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="grid.css" rel="stylesheet" type="text/css">
+        
+       
+    </head>
+    <body class="body" onload="document.getElementById('lbid').innerHTML=localStorage.getItem('lastbid1')">
+         <header class="mainheader">    
+           
+            <div style="display: inline-block;text-indent: 100px;font-variant: small-caps;color:#9cf;font-size: 20px">
+
+                <h1 style="text-shadow:2px 2px 5px black"><i>Online Auctioneers</i></h1><br>
+
+
+            </div>
+            <nav><center><ul>      
+                    <li class="active"><a href="index.html" style='margin-left:100px;border-radius: 5px;border-left: 1px solid#ccc'>Home</a></li> 
+                    <li class="active"><a href="#">Asian Antiquities</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                      <li><a href="#">Collectible</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Home&Garden</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    
+                </ul></center></nav>
+         </header>
+        <br><br>    
+        <div class="details" style="width: 70%;margin: 0 auto;background-color: white;box-shadow: 0 0 8px">
+            
+            <div class="details1" style="margin-left: 20px">
+             
+                <h1 style="size: 20px">Indian Antique Diamond ring</h1><br>
+                <img src="images/a006.jpg" style="width: 350px;height: 400px;margin: 10px 10px 10px;box-shadow: 0 0 8px">
+                
+                <div style="float: right;margin-right: 110px;margin-top: 10px">
+                                <div style="width: 300px;height: 20px;box-shadow: 0 0 8px;"></div>
+                            <div style="width: 300px;height: 330px;box-shadow: 0 0 8px;;margin-right: 0px">
+                                <div style="margin-left: 5px;width: 300px;height: auto;">
+                                <h2><center>Leave a bid</center></h2>
+                                <div style="padding: 5px 5px 5px">
+                                   
+                                    
+                                    <form action="http://localhost:80/eauction/public_html/prodretrive.php" method="GET">
+                                        <input type="text" name="id" value="14" style="display: none">
+                                        <input type="hidden" name="redirurl" value="a6.html" />
+                                    Rupees: <input type="text" id='price' name="price" placeholder="leave a bid" >.00
+                                    <input type="submit" name="submit" value="Bid now" >
+                                </form>
+                                    
+                                </div>
+                                <br>
+                                <h3>Estimate:</h3> 1,20,000 - 2,30,000
+                                <h3>Starting bid:</h3> 1,00,000
+                                <h3>Last Bid:</h3><span id="lbid"></span>
+                            </div>  
+                            </div>
+                              <div style="width: 300px;height: 40px;box-shadow: 0 0 8px;margin-top: 10px"></div>
+                            </div> 
+                
+                
+               <h2> Description</h2>
+               <p>
+                   One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish. The featured tanzanite is set within tiered diamond bezels, completed by a two and one-half millimeter wide band. Identified with markings of "K14".
+               </p>     
+              <br><br>      
+            </div>
+        </div>
+    </body>
+</html>

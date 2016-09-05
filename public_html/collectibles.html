@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Online Auctioneers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="grid.css" rel="stylesheet" type="text/css">
+        
+       
+    </head>
+    
+    <body class="body" onload="chechUser()">
+         <header class="mainheader">    
+           
+            <div style="display: inline-block;text-indent: 100px;font-variant: small-caps;color:#9cf;font-size: 20px">
+
+                <h1 style="text-shadow:2px 2px 5px black"><i>Online Auctioneers</i></h1><br>
+
+
+            </div>
+            <nav><center><ul>      
+                    <li class="active"><a href="index.html" style='margin-left:100px;border-radius: 5px;border-left: 1px solid#ccc'>Home</a></li> 
+                    <li ><a href="asian.html">Asian Antiquities</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                      <li><a href="#">Collectible</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Home&Garden</a></li>
+                    <li><a href="#">Fashion</a></li>
+              
+                </ul></center></nav>
+         </header>
+        <br>
+        <h1 style="font-family: Aniron Bold;text-align: center;font-size: 80px;color: #000000;text-shadow: 2px 2px 5px #259FDC">COLLECTIBLES</h1>
+        <br>
+        
+       	<div id="four-columns" class="grid-container" style="display:block;">
+			<ul class="rig">
+				<li>
+					<img src="images/c001.jpg" />
+					<h3>Image Title</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish</p>
+                                       
+                                        <input type="button"  value="bid" id="bidbutton15" onclick="window.location='c1.html'">
+                                       
+
+				</li>
+				<li>
+					<img src="images/c002.jpg" />
+					<h3>Image Title</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish.</p>
+                                        
+                                        <input type="button" value="bid" id="bidbutton16" onclick="window.location='c2.html'">
+                                </li>
+				<li>
+					<img src="images/c003.jpg" />
+					<h3>Image Title</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish.</p>
+                                        
+                                        <input type="button" value="bid" id="bidbutton17" onclick="window.location='c3.html'">
+                                </li>
+				<li>
+					<img src="images/c004.jpg" />
+					<h3>Image Title</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish.</p>
+                                        
+                                        <input type="button" value="bid" id="bidbutton18" onclick="window.location='c4.html'">
+                                </li>
+				<li>
+					<img src="images/c005.jpg" />
+					<h3>Image Title</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish</p>
+                                        <input type="button" value="bid" id="bidbutton19" onclick="window.location='c5.html'">
+                                </li>
+				<li>
+					<img src="images/c006.jpg" />
+					<h3>Image Title</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish</p>
+                                        <input type="button" value="bid" id="bidbutton20" onclick="window.location='c6.html'">
+                                </li>
+				
+			</ul>
+		</div>
+       
+        <script>
+         function chechUser(){
+            if(sessionStorage.getItem('username')===null)
+            {
+                alert("Please login to bid..")
+            }
+            else
+            {
+                document.getElementById("bidbutton15").style.visibility = "visible";
+                document.getElementById("bidbutton16").style.visibility = "visible";
+                document.getElementById("bidbutton17").style.visibility = "visible";
+                document.getElementById("bidbutton18").style.visibility = "visible";
+                document.getElementById("bidbutton19").style.visibility = "visible";
+                document.getElementById("bidbutton20").style.visibility = "visible";
+            }
+        }
+    </script>
+       
+    </body>
+    
+</html>

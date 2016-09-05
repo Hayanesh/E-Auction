@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+      
+    <style>
+        img:hover {
+    -webkit-filter: drop-shadow(8px 8px 10px black); /* Chrome, Safari, Opera */
+    filter: drop-shadow(8px 8px 10px black);
+}
+    </style>
+    </head>
+    <body onload="checkCookie()">
+    
+    <div class="loginback">
+  
+        <div id="loginmain" class="popup-inner" >
+            <form id="myform" action="http://localhost:80/eauction/public_html/checker.php" method="post">
+                <h1 style=" font-variant: small-caps;color: #DA0" >LOGIN FORM</h1>
+         
+                    
+                    <div><b>User Name : </b>
+                          <input type="text" name="UN" id="UN" autofocus required><br><br>
+                        </div>
+                        <div style="text-indent: 10px " ><b>Password : </b>
+                          <input type="password"  id="PWord" name="PWord" autofocus required><br><br>
+                        </div>
+          
+                        <div class="formholder" style="text-indent: 20px">
+                            <div style="float: left;margin-left:100px">
+                                <input type="submit" id="b2" name="b1" value="Login">
+                              </div>
+                            <div style="float: left;margin-left:20px">
+                               <!-- <input type="submit"  id="b2" name="b2" value="Signup">-->
+                               or Create a new <a href="signin.html">account</a>
+                            </div>
+                           
+                            <br><br><p>Once registered password cannot be RESET</p>
+                       
+                      
+        </div>
+        
+      
+   </div>
+         </div>
+       <a href="index.html"> <img src="img/back.jpg"></a>
+       <script>
+         
+
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user=getCookie("cookie[1]");
+    var pass = getCookie("cookie[2]");
+    if (user != "") {
+        //window.location = "http://localhost:8080/main.jsp";
+       document.getElementById("UN").value = user;
+       document.getElementById("PWord").value = pass;
+    }
+      
+}
+
+         </script>
+         </body>
+         
+</html>

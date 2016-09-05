@@ -1,0 +1,176 @@
+ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2016, 4:43:32 PM
+    Author     : hayanesh
+*/
+
+body{
+   background-color: #fff;
+  background-size: cover;
+    color: #000305;
+    font-size: 87.5%;
+    font-family: Arial,'Lucida Sans Unicode';
+    line-height: 1.5;
+    
+}
+
+
+a{
+   text-decoration: none;
+   
+}
+a:link,a:visited{
+ 
+}
+.active{
+    color: blue;
+}
+.body{
+    margin: 0 auto;
+   
+    clear:both;
+}
+.slider{
+    height: 200px;
+}
+.mainheader{
+     background: url(img/headerLine.jpg);
+     
+}
+.mainheader nav{
+    background-color: #666;
+    height:40px;
+    text-align: center;
+    
+}
+.mainheader nav ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EEE;
+    
+}
+.mainheader nav ul li{
+    float: left;
+    display: inline;
+    border-right: 1px solid#ccc;
+    border-radius: 5px;
+}
+.mainheader li a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    
+}
+.mainheader li a:hover{
+    color: blue;
+    padding-left: 100px;
+}
+
+
+.mainContent{
+    line-height: 25px;
+    border-radius: 5px;
+    border-style: inherit;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+.content{
+    border: outset;
+    border-radius: 5px;
+    background-color: ghostwhite;
+    width: 550px;
+    float: left;
+}
+.top-sidebar{
+    width: 420px;
+    height: 350px;
+     border: outset;
+     background-color: #c3dfef;
+    float:left;
+    border-radius: 5px;
+    
+}
+.news{
+    font-variant: small-caps;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 20px;
+    margin-left: 5%;
+}
+.loginback{
+   background-image: url(img/lbk.jpg);
+  -webkit-filter: drop-shadow(8px 8px 10px black); /* Chrome, Safari, Opera */
+    filter: drop-shadow(8px 8px 10px black);
+   
+  
+}
+#loginmain{
+    text-align: center;
+   // float: left;
+    font-family: "Times New Roman",Times,Red Serif;
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    width:30em;
+    //height:18em;
+    margin-top: -9em; 
+   // overflow: hidden;
+    margin-left: -15em; 
+    border: 1px solid #ccc;
+    //color: #ecf0f1;
+    background-color: #c3dfef;
+   // background: transparent;
+   // background: url(img/raspberry.jpg);
+  // background-color:  #34495e;
+   // box-shadow: 10px 10px 5px;
+}
+.formholder input[name="b1"],input[name="b2"],input[name="submit"] {
+  text-align: center;
+  background: #1abc9c;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  width: 100px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+ // margin: 0 auto;
+}
+.container{
+    display: inline-block;
+    text-align: center;
+}
+td:hover{
+    background-color: #9cf
+}
+//product
+
+.details1 input[name="submit"]{
+    text-align: center;
+  background: #1abc9c;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  width: 100px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.details1 input[name="price"]{
+      text-align: center;
+ 
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  width:150px;
+  border-radius: 5px;
+}
+

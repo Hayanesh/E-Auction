@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Online Auctioneers</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="grid.css" rel="stylesheet" type="text/css">
+        
+       
+    </head>
+    
+    <body class="body" onload="chechUser()">
+         <header class="mainheader">    
+           
+            <div style="display: inline-block;text-indent: 100px;font-variant: small-caps;color:#9cf;font-size: 20px">
+
+                <h1 style="text-shadow:2px 2px 5px black"><i>Online Auctioneers</i></h1><br>
+
+
+            </div>
+            <nav><center><ul>      
+                    <li class="active"><a href="index.html" style='margin-left:100px;border-radius: 5px;border-left: 1px solid#ccc'>Home</a></li> 
+                    <li ><a href="asian.html">Asian Antiquities</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                      <li><a href="collectibles.html">Collectible</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Home&Garden</a></li>
+                    <li><a href="#">Fashion</a></li>
+              
+                </ul></center></nav>
+         </header>
+        <br>
+        <h1 style="font-family:Aniron Bold;text-align: center;font-size: 80px;color: #000000;text-shadow: 2px 2px 5px #259FDC">J E W E L R Y</h1>
+        <br>
+        
+       	<div id="four-columns" class="grid-container" style="display:block;">
+			<ul class="rig">
+				<li>
+					<img src="images/asian001.jpg" />
+					<h3>Asian Diamond Ring</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish</p>
+                                       
+                                        <input type="button"  value="bid" id="bidbutton1" onclick="window.location='j1.html'">
+                                       
+
+				</li>
+				<li>
+					<img src="images/asian002.jpg" />
+					<h3>14K Solitaire Diamond</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish.</p>
+                                        
+                                        <input type="button" value="bid" id="bidbutton2" onclick="window.location='j2.html'">
+                                </li>
+				<li>
+					<img src="images/asian003.jpg" />
+					<h3>Cartier 18K White Gold</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish.</p>
+                                        
+                                        <input type="button" value="bid" id="bidbutton3" onclick="window.location='j3.html'">
+                                </li>
+				<li>
+					<img src="images/asian004.jpg" />
+					<h3>Cartier Necklace</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish.</p>
+                                        
+                                        <input type="button" value="bid" id="bidbutton4" onclick="window.location='j4.html'">
+                                </li>
+				<li>
+					<img src="images/asian005.jpg" />
+					<h3>Indian 24K Necklace</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish</p>
+                                        <input type="button" value="bid" id="bidbutton5" onclick="window.location='j5.html'">
+                                </li>
+				<li>
+					<img src="images/asian006.jpg" />
+					<h3>Indian Royal Bangle</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish</p>
+                                        <input type="button" value="bid" id="bidbutton6" onclick="window.location='j6.html'">
+                                </li>
+				<li>
+					<img src="images/asian007.jpg" />
+					<h3>Indian Bridal Earring</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish.</p>
+                                        <input type="button" value="bid" id="bidbutton7" onclick="window.location='j7.html'">
+                                </li>
+				<li>
+					<img src="images/asian008.jpg" />
+					<h3>Antoinette Antique</h3>
+					<p>One electronically tested 14KT white gold ladies cast tanzanite and diamond ring with a bright polish finish.</p>
+                                        <input type="button" value="bid" id="bidbutton8" onclick="window.location='j8.html'">
+                                </li>
+			</ul>
+		</div>
+       
+        <script>
+         function chechUser(){
+            if(sessionStorage.getItem('username')===null)
+            {
+                alert("Please login to bid");
+            }
+            else
+            {
+          
+                document.getElementById("bidbutton1").style.visibility = "visible";
+                document.getElementById("bidbutton2").style.visibility = "visible";
+                document.getElementById("bidbutton3").style.visibility = "visible";
+                document.getElementById("bidbutton4").style.visibility = "visible";
+                document.getElementById("bidbutton5").style.visibility = "visible";
+                document.getElementById("bidbutton6").style.visibility = "visible";
+                document.getElementById("bidbutton7").style.visibility = "visible";
+                document.getElementById("bidbutton8").style.visibility = "visible";
+
+            }
+        }
+    </script>
+       
+    </body>
+    
+</html>
